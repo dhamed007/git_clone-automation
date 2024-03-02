@@ -23,6 +23,6 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run Script
-        run: python project1-Gitlab-github\gl-gh-automation.py
+        run:  ..\gl-gh-automation.py
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
