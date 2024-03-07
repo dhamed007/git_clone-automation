@@ -24,6 +24,6 @@ jobs:
 
       - name: Run Script
         run: python gl-gh-automation.py
-        working-directory: ./git_clone-automation  # Adjust the path as per your directory structure
+        working-directory: project1-Gitlab-github/git_clone-automation  # Adjust the path as per your directory structure
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
