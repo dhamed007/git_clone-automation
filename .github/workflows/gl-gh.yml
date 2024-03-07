@@ -23,6 +23,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run Script
-        run:  ..\gl-gh-automation.py
+        run: python gl-gh-automation.py
+        working-directory: ./git_clone-automation  # Adjust the path as per your directory structure
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
